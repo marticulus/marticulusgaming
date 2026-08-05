@@ -174,3 +174,9 @@ body.policy {
     padding: 1.75rem 0 3rem;
   }
 }
+
+
+.policy-page a:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 4px;
+}
