@@ -57,3 +57,120 @@ body {
   height: 9%;
   z-index: 11;
 }
+
+@media (max-width: 768px) {
+  html,
+  body,
+  .page {
+    min-height: 100svh;
+  }
+
+  .page-image {
+    width: 100%;
+    height: 100svh;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+/* ---------- Privacy Policy page ---------- */
+
+body.policy {
+  overflow: auto;
+  height: auto;
+  min-height: 100%;
+  color: #f2f2f2;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(72, 36, 110, 0.35) 0%, transparent 55%),
+    #000;
+}
+
+.policy-page {
+  width: min(100% - 2.5rem, 44rem);
+  margin: 0 auto;
+  padding: 2.5rem 0 4rem;
+  line-height: 1.65;
+}
+
+.policy-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.policy-home-link {
+  color: #e8d8ff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.policy-home-link:hover,
+.policy-home-link:focus-visible {
+  text-decoration: underline;
+}
+
+.policy-updated {
+  margin: 0;
+  color: rgba(242, 242, 242, 0.7);
+  font-size: 0.9rem;
+}
+
+.policy-page h1 {
+  margin: 0 0 0.85rem;
+  font-size: clamp(1.85rem, 5vw, 2.6rem);
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+}
+
+.policy-intro {
+  margin: 0 0 2rem;
+  color: rgba(242, 242, 242, 0.92);
+}
+
+.policy-page section {
+  margin-bottom: 1.75rem;
+}
+
+.policy-page h2 {
+  margin: 0 0 0.65rem;
+  font-size: 1.15rem;
+  letter-spacing: 0.03em;
+  color: #e8d8ff;
+}
+
+.policy-page p,
+.policy-page li {
+  color: rgba(242, 242, 242, 0.9);
+  font-size: 1rem;
+}
+
+.policy-page ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.policy-page li + li {
+  margin-top: 0.45rem;
+}
+
+.policy-page a[href^="mailto:"] {
+  color: #e8d8ff;
+}
+
+.policy-footer {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+@media (max-width: 768px) {
+  .policy-page {
+    width: min(100% - 1.5rem, 44rem);
+    padding: 1.75rem 0 3rem;
+  }
+}
